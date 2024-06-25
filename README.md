@@ -6,7 +6,7 @@ This is a WordPress Plugin that creates a button on your site which keeps track 
 It's a fun attraction for a website I think.
 
 ### How to Use
-This plugin is activated with shortcodes:\
+This plugin uses with shortcodes:
 
 You create the button on your site by using the shortcode `[fun-button]`
 
