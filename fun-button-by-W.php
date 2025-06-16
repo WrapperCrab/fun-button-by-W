@@ -10,7 +10,7 @@ add_action('wp_enqueue_scripts','fun_button_onclick_init');
 function fun_button_onclick_init(){
     //load the scripts needed for the plugin
     wp_register_script('fun-button-onclick-js',"https://www.mowinpeople.com/wp-content/plugins/fun-button-by-W/fun-button-onclick.js",array('jquery'));
-    wp_enqueue_script('fun-button-onclick-js');
+    // wp_enqueue_script('fun-button-onclick-js');
     wp_localize_script('fun-button-onclick-js','ajax_object',array('ajaxurl' => admin_url('admin-ajax.php')));
 }
 
@@ -162,6 +162,7 @@ function delete_fun_button_user_clicks(){
 
 function show_fun_button(){
     ob_start();
+    wp_enqueue_script('fun-button-onclick-js');
     ?>
     <html>
     <body>
